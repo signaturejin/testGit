@@ -126,11 +126,11 @@ body {
   height: 224px;
 }
 #container .cont2 .comp {
-  background-image: url("../1.알엠에스에코닝/img/sec1_bg.jpg");
+  background-image: url("../img/sec1_bg.jpg");
   width: 428px;
 }
 #container .cont2 .prod {
-  background-image: url("../1.알엠에스에코닝/img/sec2_bg.jpg");
+  background-image: url("../img/sec2_bg.jpg");
   width: 310px;
 }
 #container .cont2 .prod > a {
@@ -140,7 +140,7 @@ body {
   line-height: 25px;
 }
 #container .cont2 .appl {
-  background-image: url("../1.알엠에스에코닝/img/sec3_bg.jpg");
+  background-image: url("../img/sec3_bg.jpg");
   width: 393px;
 }
 #container .cont2 .textBox {
