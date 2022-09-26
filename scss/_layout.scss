@@ -1,0 +1,168 @@
+#header {
+    display: flex; justify-content: center; background-color: #fff;
+    
+    .center {
+        width: 1200px;
+        display: flex; justify-content: space-between;
+        align-items: center;
+        .gnb {
+            display: flex;
+            > li {
+                line-height: 100px;
+                // background-color: red;
+                position: relative;
+                > a {
+                    display: block;
+                    height: 100%;
+                    // background-color: green;
+                    margin-right: 73px;
+                    color: #000;
+                    font-weight: bold;
+                }
+                .sub {
+                    display: none;
+                    position: absolute; left: -15px; top: 101px;
+                    width: 167px;
+                    z-index: 99;
+                    
+                    
+                    li {
+                        line-height: 40px;
+                        background-color: #fff;
+                        border-bottom: 1px solid #e9e9ea;
+                        padding-left: 17px;
+                        
+                        
+                        &:last-child {border-bottom: none;}
+
+                        a {color: #555;}
+                    }
+                }
+            }
+        }
+    }
+}
+
+#container {
+    background-color: #f7f7f7;
+    padding: 30px 0;
+    // height: 1000px;
+
+    .banner {
+        width: 1200px; margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+
+        .slider {
+            width: 500%; display: flex;
+            transition: all 0.5s;
+
+            > img {
+                width: 20%;
+                // border: 5px solid red;
+                }
+            }
+        .moveBtn {
+            .prevBtn {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+               left: 45px;
+                }
+            .nextBtn {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 45px;
+                }
+            }
+        .circleBtn {
+            position: absolute;
+            left: 50%;
+            bottom: 45px;
+            transform: translateX(-50%);
+            display: flex;
+            .circle {
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background-color: #fff;
+                margin: 0 3px;
+                box-sizing: border-box;
+
+                &:first-child {
+                    background-color: transparent;
+                    border: 3px solid #fff;
+                }
+            }
+        }
+    }
+
+
+    .cont2 {
+        width: 1200px; margin: 0 auto;
+        display: flex; justify-content: space-between;
+        margin-top: 30px;
+
+       > div {
+        height: 224px;
+       }
+
+        .comp {
+            background-image: url("../1.알엠에스에코닝/img/sec1_bg.jpg");
+            width: 428px;
+        }
+        .prod {
+            background-image: url("../1.알엠에스에코닝/img/sec2_bg.jpg");
+            width: 310px;
+
+            > a {
+                color: #fff;
+                display: block;
+                margin: 30px 0 0 50px;
+                line-height: 25px;
+            }
+        }
+        .appl {
+            background-image: url("../1.알엠에스에코닝/img/sec3_bg.jpg");
+            width: 393px;
+        }
+        
+        .textBox {
+            margin: 47px 0 0 50px;
+
+            a {color: #fff;}
+
+            h2 {
+                font-size: 25px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+#footer {
+    width: 1200px; margin: 0 auto;
+    display: flex; justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    .address {
+
+        span {
+            line-height: 100px;
+            color: #848684;
+            position: relative;
+            margin: 0 8px;
+            
+            &::after {
+                content: ""; display: block;
+                width: 1px; height: 13px; background-color: #848684;
+                position: absolute; right: -12px; top: 2px;
+            }
+
+            &:last-child {
+                &::after {display: none;}
+            }
+        }
+    }
+}
